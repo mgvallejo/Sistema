@@ -11,10 +11,10 @@ using Sistema.Negocio;
 
 namespace Sistema.Presentacion
 {
-    public partial class FrmProveedor : Form
+    public partial class FrmCliente : Form
     {
         public string NombreAnt;
-        public FrmProveedor()
+        public FrmCliente()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace Sistema.Presentacion
         {
             try
             {
-                DgvListado.DataSource = NPersona.ListarProveedores();
+                DgvListado.DataSource = NPersona.ListarClientes();
                 this.Formato();
                 this.Limpiar();
                 LblTotal.Text = "Total de registros: " + Convert.ToString(DgvListado.Rows.Count);
@@ -37,7 +37,7 @@ namespace Sistema.Presentacion
         {
             try
             {
-                DgvListado.DataSource = NPersona.BuscarProveedores(TxtBuscar.Text);
+                DgvListado.DataSource = NPersona.BuscarClientes(TxtBuscar.Text);
                 this.Formato();
                 LblTotal.Text = "Total de registros: " + Convert.ToString(DgvListado.Rows.Count);
             }
@@ -92,7 +92,7 @@ namespace Sistema.Presentacion
             MessageBox.Show(Mensaje, "Sistema de ventas", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void FrmProveedor_Load(object sender, EventArgs e)
+        private void FrmCliente_Load(object sender, EventArgs e)
         {
             Listar();
         }
@@ -116,7 +116,7 @@ namespace Sistema.Presentacion
                 else
                 {
                     Rpta = NPersona.Insertar(
-                        "Proveedor",
+                        "Cliente",
                         TxtNombre.Text.Trim(),
                         CboTipoDocumento.Text,
                         TxtNumDocumento.Text.Trim(),
@@ -179,7 +179,7 @@ namespace Sistema.Presentacion
                 {
                     Rpta = NPersona.Actualizar(
                         Convert.ToInt32(TxtId.Text),
-                        "Proveedor",
+                        "Cliente",
                         this.NombreAnt,
                         TxtNombre.Text.Trim(),
                         CboTipoDocumento.Text,

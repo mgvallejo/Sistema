@@ -136,6 +136,7 @@ namespace Sistema.Presentacion
             this.TxtClave.PasswordChar = '*';
             this.TxtClave.Size = new System.Drawing.Size(272, 28);
             this.TxtClave.TabIndex = 6;
+            this.TxtClave.Text = "mismonica2005";
             // 
             // label3
             // 
@@ -154,6 +155,7 @@ namespace Sistema.Presentacion
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.Size = new System.Drawing.Size(272, 28);
             this.TxtEmail.TabIndex = 6;
+            this.TxtEmail.Text = "mgvallejo2012@gmail.com";
             // 
             // label2
             // 

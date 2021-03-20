@@ -255,7 +255,7 @@ namespace Sistema.Datos
             try
             {
                 SqlCon = Conexion.getInstancia().CrearConexion();
-                SqlCommand Comando = new SqlCommand("perdona_eliminar", SqlCon);
+                SqlCommand Comando = new SqlCommand("persona_eliminar", SqlCon);
                 Comando.CommandType = CommandType.StoredProcedure;
                 Comando.Parameters.Add("@idpersona", SqlDbType.Int).Value = Id;
                 SqlCon.Open();

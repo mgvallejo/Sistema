@@ -1,7 +1,7 @@
 ﻿
 namespace Sistema.Presentacion
 {
-    partial class FrmProveedor
+    partial class FrmCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -30,26 +30,20 @@ namespace Sistema.Presentacion
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProveedor));
-            this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCliente));
+            this.ErroIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.CboTipoDocumento = new System.Windows.Forms.ComboBox();
-            this.TxtDireccion = new System.Windows.Forms.TextBox();
-            this.TxtNumDocumento = new System.Windows.Forms.TextBox();
-            this.TxtTelefono = new System.Windows.Forms.TextBox();
-            this.BtnEliminar = new System.Windows.Forms.Button();
-            this.ChkSeleccionar = new System.Windows.Forms.CheckBox();
-            this.BtnBuscar = new System.Windows.Forms.Button();
-            this.TxtBuscar = new System.Windows.Forms.TextBox();
-            this.LblTotal = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.DgvListado = new System.Windows.Forms.DataGridView();
-            this.tabGeneral = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.TxtEmail = new System.Windows.Forms.TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label10 = new System.Windows.Forms.Label();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnActualizar = new System.Windows.Forms.Button();
             this.BtnInsertar = new System.Windows.Forms.Button();
+            this.TxtDireccion = new System.Windows.Forms.TextBox();
+            this.TxtNumDocumento = new System.Windows.Forms.TextBox();
+            this.TxtTelefono = new System.Windows.Forms.TextBox();
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -59,22 +53,26 @@ namespace Sistema.Presentacion
             this.label3 = new System.Windows.Forms.Label();
             this.TxtId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ErroIcono = new System.Windows.Forms.ErrorProvider(this.components);
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvListado)).BeginInit();
-            this.tabGeneral.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.DgvListado = new System.Windows.Forms.DataGridView();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.BtnEliminar = new System.Windows.Forms.Button();
+            this.ChkSeleccionar = new System.Windows.Forms.CheckBox();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.TxtBuscar = new System.Windows.Forms.TextBox();
+            this.LblTotal = new System.Windows.Forms.Label();
+            this.tabGeneral = new System.Windows.Forms.TabControl();
             ((System.ComponentModel.ISupportInitialize)(this.ErroIcono)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvListado)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            this.tabGeneral.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Seleccionar
+            // ErroIcono
             // 
-            this.Seleccionar.HeaderText = "Seleccionar";
-            this.Seleccionar.Name = "Seleccionar";
-            this.Seleccionar.ReadOnly = true;
+            this.ErroIcono.ContainerControl = this;
             // 
             // CboTipoDocumento
             // 
@@ -91,119 +89,33 @@ namespace Sistema.Presentacion
             this.CboTipoDocumento.TabIndex = 5;
             this.CboTipoDocumento.Text = "DNI";
             // 
-            // TxtDireccion
+            // panel1
             // 
-            this.TxtDireccion.Location = new System.Drawing.Point(23, 190);
-            this.TxtDireccion.Name = "TxtDireccion";
-            this.TxtDireccion.Size = new System.Drawing.Size(342, 25);
-            this.TxtDireccion.TabIndex = 1;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(134)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(784, 50);
+            this.panel1.TabIndex = 6;
             // 
-            // TxtNumDocumento
+            // label1
             // 
-            this.TxtNumDocumento.Location = new System.Drawing.Point(23, 141);
-            this.TxtNumDocumento.Name = "TxtNumDocumento";
-            this.TxtNumDocumento.Size = new System.Drawing.Size(340, 25);
-            this.TxtNumDocumento.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "CLIENTES";
             // 
-            // TxtTelefono
+            // TxtEmail
             // 
-            this.TxtTelefono.Location = new System.Drawing.Point(392, 141);
-            this.TxtTelefono.Name = "TxtTelefono";
-            this.TxtTelefono.Size = new System.Drawing.Size(337, 25);
-            this.TxtTelefono.TabIndex = 1;
-            // 
-            // BtnEliminar
-            // 
-            this.BtnEliminar.Location = new System.Drawing.Point(106, 290);
-            this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(75, 25);
-            this.BtnEliminar.TabIndex = 7;
-            this.BtnEliminar.Text = "Eliminar";
-            this.BtnEliminar.UseVisualStyleBackColor = true;
-            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
-            // 
-            // ChkSeleccionar
-            // 
-            this.ChkSeleccionar.AutoSize = true;
-            this.ChkSeleccionar.Location = new System.Drawing.Point(6, 293);
-            this.ChkSeleccionar.Name = "ChkSeleccionar";
-            this.ChkSeleccionar.Size = new System.Drawing.Size(94, 22);
-            this.ChkSeleccionar.TabIndex = 4;
-            this.ChkSeleccionar.Text = "Seleccionar";
-            this.ChkSeleccionar.UseVisualStyleBackColor = true;
-            this.ChkSeleccionar.CheckedChanged += new System.EventHandler(this.ChkSeleccionar_CheckedChanged);
-            // 
-            // BtnBuscar
-            // 
-            this.BtnBuscar.Location = new System.Drawing.Point(671, 6);
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(75, 25);
-            this.BtnBuscar.TabIndex = 3;
-            this.BtnBuscar.Text = "Buscar";
-            this.BtnBuscar.UseVisualStyleBackColor = true;
-            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
-            // 
-            // TxtBuscar
-            // 
-            this.TxtBuscar.Location = new System.Drawing.Point(6, 6);
-            this.TxtBuscar.Name = "TxtBuscar";
-            this.TxtBuscar.Size = new System.Drawing.Size(659, 25);
-            this.TxtBuscar.TabIndex = 2;
-            // 
-            // LblTotal
-            // 
-            this.LblTotal.AutoSize = true;
-            this.LblTotal.Location = new System.Drawing.Point(586, 294);
-            this.LblTotal.Name = "LblTotal";
-            this.LblTotal.Size = new System.Drawing.Size(38, 18);
-            this.LblTotal.TabIndex = 1;
-            this.LblTotal.Text = "Total";
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.BtnEliminar);
-            this.tabPage1.Controls.Add(this.ChkSeleccionar);
-            this.tabPage1.Controls.Add(this.BtnBuscar);
-            this.tabPage1.Controls.Add(this.TxtBuscar);
-            this.tabPage1.Controls.Add(this.LblTotal);
-            this.tabPage1.Controls.Add(this.DgvListado);
-            this.tabPage1.Location = new System.Drawing.Point(4, 27);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(752, 321);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Lista";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // DgvListado
-            // 
-            this.DgvListado.AllowUserToAddRows = false;
-            this.DgvListado.AllowUserToDeleteRows = false;
-            this.DgvListado.AllowUserToOrderColumns = true;
-            this.DgvListado.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(61)))));
-            this.DgvListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.DgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Seleccionar});
-            this.DgvListado.Location = new System.Drawing.Point(6, 37);
-            this.DgvListado.Name = "DgvListado";
-            this.DgvListado.ReadOnly = true;
-            this.DgvListado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.DgvListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvListado.Size = new System.Drawing.Size(740, 247);
-            this.DgvListado.TabIndex = 0;
-            this.DgvListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvListado_CellContentClick);
-            this.DgvListado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvListado_CellDoubleClick);
-            // 
-            // tabGeneral
-            // 
-            this.tabGeneral.Controls.Add(this.tabPage1);
-            this.tabGeneral.Controls.Add(this.tabPage2);
-            this.tabGeneral.Location = new System.Drawing.Point(12, 62);
-            this.tabGeneral.Name = "tabGeneral";
-            this.tabGeneral.SelectedIndex = 0;
-            this.tabGeneral.Size = new System.Drawing.Size(760, 352);
-            this.tabGeneral.TabIndex = 5;
+            this.TxtEmail.Location = new System.Drawing.Point(392, 190);
+            this.TxtEmail.Name = "TxtEmail";
+            this.TxtEmail.Size = new System.Drawing.Size(337, 25);
+            this.TxtEmail.TabIndex = 8;
             // 
             // tabPage2
             // 
@@ -228,17 +140,10 @@ namespace Sistema.Presentacion
             this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(20);
-            this.tabPage2.Size = new System.Drawing.Size(752, 321);
+            this.tabPage2.Size = new System.Drawing.Size(752, 324);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // TxtEmail
-            // 
-            this.TxtEmail.Location = new System.Drawing.Point(392, 190);
-            this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(337, 25);
-            this.TxtEmail.TabIndex = 8;
             // 
             // label10
             // 
@@ -279,6 +184,27 @@ namespace Sistema.Presentacion
             this.BtnInsertar.Text = "Insertar";
             this.BtnInsertar.UseVisualStyleBackColor = true;
             this.BtnInsertar.Click += new System.EventHandler(this.BtnInsertar_Click);
+            // 
+            // TxtDireccion
+            // 
+            this.TxtDireccion.Location = new System.Drawing.Point(23, 190);
+            this.TxtDireccion.Name = "TxtDireccion";
+            this.TxtDireccion.Size = new System.Drawing.Size(342, 25);
+            this.TxtDireccion.TabIndex = 1;
+            // 
+            // TxtNumDocumento
+            // 
+            this.TxtNumDocumento.Location = new System.Drawing.Point(23, 141);
+            this.TxtNumDocumento.Name = "TxtNumDocumento";
+            this.TxtNumDocumento.Size = new System.Drawing.Size(340, 25);
+            this.TxtNumDocumento.TabIndex = 1;
+            // 
+            // TxtTelefono
+            // 
+            this.TxtTelefono.Location = new System.Drawing.Point(392, 141);
+            this.TxtTelefono.Name = "TxtTelefono";
+            this.TxtTelefono.Size = new System.Drawing.Size(337, 25);
+            this.TxtTelefono.TabIndex = 1;
             // 
             // TxtNombre
             // 
@@ -360,80 +286,157 @@ namespace Sistema.Presentacion
             this.label2.TabIndex = 0;
             this.label2.Text = "ID";
             // 
-            // panel1
+            // Seleccionar
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(134)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 50);
-            this.panel1.TabIndex = 4;
+            this.Seleccionar.HeaderText = "Seleccionar";
+            this.Seleccionar.Name = "Seleccionar";
+            this.Seleccionar.ReadOnly = true;
             // 
-            // label1
+            // DgvListado
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "PROVEEDORES";
+            this.DgvListado.AllowUserToAddRows = false;
+            this.DgvListado.AllowUserToDeleteRows = false;
+            this.DgvListado.AllowUserToOrderColumns = true;
+            this.DgvListado.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(61)))));
+            this.DgvListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.DgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Seleccionar});
+            this.DgvListado.Location = new System.Drawing.Point(6, 37);
+            this.DgvListado.Name = "DgvListado";
+            this.DgvListado.ReadOnly = true;
+            this.DgvListado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.DgvListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvListado.Size = new System.Drawing.Size(740, 247);
+            this.DgvListado.TabIndex = 0;
+            this.DgvListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvListado_CellContentClick);
+            this.DgvListado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvListado_CellDoubleClick);
             // 
-            // ErroIcono
+            // tabPage1
             // 
-            this.ErroIcono.ContainerControl = this;
+            this.tabPage1.Controls.Add(this.BtnEliminar);
+            this.tabPage1.Controls.Add(this.ChkSeleccionar);
+            this.tabPage1.Controls.Add(this.BtnBuscar);
+            this.tabPage1.Controls.Add(this.TxtBuscar);
+            this.tabPage1.Controls.Add(this.LblTotal);
+            this.tabPage1.Controls.Add(this.DgvListado);
+            this.tabPage1.Location = new System.Drawing.Point(4, 27);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(752, 324);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Lista";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // FrmProveedor
+            // BtnEliminar
+            // 
+            this.BtnEliminar.Location = new System.Drawing.Point(106, 290);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Size = new System.Drawing.Size(75, 25);
+            this.BtnEliminar.TabIndex = 7;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
+            // 
+            // ChkSeleccionar
+            // 
+            this.ChkSeleccionar.AutoSize = true;
+            this.ChkSeleccionar.Location = new System.Drawing.Point(6, 293);
+            this.ChkSeleccionar.Name = "ChkSeleccionar";
+            this.ChkSeleccionar.Size = new System.Drawing.Size(94, 22);
+            this.ChkSeleccionar.TabIndex = 4;
+            this.ChkSeleccionar.Text = "Seleccionar";
+            this.ChkSeleccionar.UseVisualStyleBackColor = true;
+            this.ChkSeleccionar.CheckedChanged += new System.EventHandler(this.ChkSeleccionar_CheckedChanged);
+            // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.Location = new System.Drawing.Point(671, 6);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(75, 25);
+            this.BtnBuscar.TabIndex = 3;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
+            // 
+            // TxtBuscar
+            // 
+            this.TxtBuscar.Location = new System.Drawing.Point(6, 6);
+            this.TxtBuscar.Name = "TxtBuscar";
+            this.TxtBuscar.Size = new System.Drawing.Size(659, 25);
+            this.TxtBuscar.TabIndex = 2;
+            // 
+            // LblTotal
+            // 
+            this.LblTotal.AutoSize = true;
+            this.LblTotal.Location = new System.Drawing.Point(586, 294);
+            this.LblTotal.Name = "LblTotal";
+            this.LblTotal.Size = new System.Drawing.Size(38, 18);
+            this.LblTotal.TabIndex = 1;
+            this.LblTotal.Text = "Total";
+            // 
+            // tabGeneral
+            // 
+            this.tabGeneral.Controls.Add(this.tabPage1);
+            this.tabGeneral.Controls.Add(this.tabPage2);
+            this.tabGeneral.Location = new System.Drawing.Point(12, 56);
+            this.tabGeneral.Name = "tabGeneral";
+            this.tabGeneral.SelectedIndex = 0;
+            this.tabGeneral.Size = new System.Drawing.Size(760, 355);
+            this.tabGeneral.TabIndex = 7;
+            // 
+            // FrmCliente
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(784, 423);
-            this.Controls.Add(this.tabGeneral);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tabGeneral);
             this.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "FrmProveedor";
+            this.Name = "FrmCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Proveedor";
-            this.Load += new System.EventHandler(this.FrmProveedor_Load);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvListado)).EndInit();
-            this.tabGeneral.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.Text = "Cliente";
+            this.Load += new System.EventHandler(this.FrmCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ErroIcono)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ErroIcono)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvListado)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabGeneral.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Seleccionar;
-        private System.Windows.Forms.ComboBox CboTipoDocumento;
-        private System.Windows.Forms.TextBox TxtDireccion;
-        private System.Windows.Forms.TextBox TxtNumDocumento;
-        private System.Windows.Forms.TextBox TxtTelefono;
+        private System.Windows.Forms.ErrorProvider ErroIcono;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabControl tabGeneral;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.CheckBox ChkSeleccionar;
         private System.Windows.Forms.Button BtnBuscar;
         private System.Windows.Forms.TextBox TxtBuscar;
         private System.Windows.Forms.Label LblTotal;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView DgvListado;
-        private System.Windows.Forms.TabControl tabGeneral;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Seleccionar;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox TxtEmail;
+        private System.Windows.Forms.ComboBox CboTipoDocumento;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button BtnActualizar;
         private System.Windows.Forms.Button BtnInsertar;
+        private System.Windows.Forms.TextBox TxtDireccion;
+        private System.Windows.Forms.TextBox TxtNumDocumento;
+        private System.Windows.Forms.TextBox TxtTelefono;
         private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
@@ -443,8 +446,5 @@ namespace Sistema.Presentacion
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TxtId;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ErrorProvider ErroIcono;
     }
 }
