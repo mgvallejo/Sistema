@@ -224,5 +224,19 @@ namespace Sistema.Presentacion
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void ventasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmVenta frm = new FrmVenta();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void consultaVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmConsulta_VentaFechas frm = new FrmConsulta_VentaFechas();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

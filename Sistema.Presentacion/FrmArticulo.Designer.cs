@@ -45,31 +45,32 @@ namespace Sistema.Presentacion
             this.DgvListado = new System.Windows.Forms.DataGridView();
             this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.PanelCodigo = new System.Windows.Forms.Panel();
+            this.CboCategoria = new System.Windows.Forms.ComboBox();
+            this.BtnGuardarCodigo = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
+            this.BtnGenerar = new System.Windows.Forms.Button();
+            this.BtnCargarImagen = new System.Windows.Forms.Button();
             this.BtnActualizar = new System.Windows.Forms.Button();
             this.BtnInsertar = new System.Windows.Forms.Button();
             this.TxtDescripcion = new System.Windows.Forms.TextBox();
+            this.TxtImagen = new System.Windows.Forms.TextBox();
+            this.TxtStock = new System.Windows.Forms.TextBox();
+            this.TxtPrecioVenta = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.TxtId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.ErroIcono = new System.Windows.Forms.ErrorProvider(this.components);
-            this.label6 = new System.Windows.Forms.Label();
-            this.CboCategoria = new System.Windows.Forms.ComboBox();
-            this.TxtImagen = new System.Windows.Forms.TextBox();
-            this.BtnCargarImagen = new System.Windows.Forms.Button();
             this.PicImagen = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.BtnGenerar = new System.Windows.Forms.Button();
-            this.BtnGuardarCodigo = new System.Windows.Forms.Button();
-            this.PanelCodigo = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.TxtPrecioVenta = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.TxtStock = new System.Windows.Forms.TextBox();
+            this.BtnReporte = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabGeneral.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -112,6 +113,7 @@ namespace Sistema.Presentacion
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.BtnReporte);
             this.tabPage1.Controls.Add(this.BtnEliminar);
             this.tabPage1.Controls.Add(this.BtnDesactivar);
             this.tabPage1.Controls.Add(this.BtnActivar);
@@ -183,7 +185,7 @@ namespace Sistema.Presentacion
             // 
             this.TxtBuscar.Location = new System.Drawing.Point(6, 6);
             this.TxtBuscar.Name = "TxtBuscar";
-            this.TxtBuscar.Size = new System.Drawing.Size(809, 25);
+            this.TxtBuscar.Size = new System.Drawing.Size(728, 25);
             this.TxtBuscar.TabIndex = 2;
             // 
             // LblTotal
@@ -247,13 +249,40 @@ namespace Sistema.Presentacion
             this.tabPage2.Controls.Add(this.TxtId);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.PicImagen);
-            this.tabPage2.Location = new System.Drawing.Point(4, 27);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(902, 462);
+            this.tabPage2.Size = new System.Drawing.Size(902, 467);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // PanelCodigo
+            // 
+            this.PanelCodigo.Location = new System.Drawing.Point(35, 184);
+            this.PanelCodigo.Name = "PanelCodigo";
+            this.PanelCodigo.Size = new System.Drawing.Size(406, 95);
+            this.PanelCodigo.TabIndex = 7;
+            // 
+            // CboCategoria
+            // 
+            this.CboCategoria.FormattingEnabled = true;
+            this.CboCategoria.Location = new System.Drawing.Point(35, 302);
+            this.CboCategoria.Name = "CboCategoria";
+            this.CboCategoria.Size = new System.Drawing.Size(406, 26);
+            this.CboCategoria.TabIndex = 5;
+            // 
+            // BtnGuardarCodigo
+            // 
+            this.BtnGuardarCodigo.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BtnGuardarCodigo.Enabled = false;
+            this.BtnGuardarCodigo.Location = new System.Drawing.Point(161, 153);
+            this.BtnGuardarCodigo.Name = "BtnGuardarCodigo";
+            this.BtnGuardarCodigo.Size = new System.Drawing.Size(123, 25);
+            this.BtnGuardarCodigo.TabIndex = 4;
+            this.BtnGuardarCodigo.Text = "Guardar Código";
+            this.BtnGuardarCodigo.UseVisualStyleBackColor = true;
+            this.BtnGuardarCodigo.Click += new System.EventHandler(this.BtnGuardarCodigo_Click);
             // 
             // BtnCancelar
             // 
@@ -265,6 +294,26 @@ namespace Sistema.Presentacion
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // BtnGenerar
+            // 
+            this.BtnGenerar.Location = new System.Drawing.Point(32, 153);
+            this.BtnGenerar.Name = "BtnGenerar";
+            this.BtnGenerar.Size = new System.Drawing.Size(123, 25);
+            this.BtnGenerar.TabIndex = 4;
+            this.BtnGenerar.Text = "Generar Código";
+            this.BtnGenerar.UseVisualStyleBackColor = true;
+            this.BtnGenerar.Click += new System.EventHandler(this.BtnGenerar_Click);
+            // 
+            // BtnCargarImagen
+            // 
+            this.BtnCargarImagen.Location = new System.Drawing.Point(835, 23);
+            this.BtnCargarImagen.Name = "BtnCargarImagen";
+            this.BtnCargarImagen.Size = new System.Drawing.Size(51, 25);
+            this.BtnCargarImagen.TabIndex = 4;
+            this.BtnCargarImagen.Text = "...";
+            this.BtnCargarImagen.UseVisualStyleBackColor = true;
+            this.BtnCargarImagen.Click += new System.EventHandler(this.BtnCargarImagen_Click);
             // 
             // BtnActualizar
             // 
@@ -294,6 +343,35 @@ namespace Sistema.Presentacion
             this.TxtDescripcion.Size = new System.Drawing.Size(411, 122);
             this.TxtDescripcion.TabIndex = 1;
             // 
+            // TxtImagen
+            // 
+            this.TxtImagen.Enabled = false;
+            this.TxtImagen.Location = new System.Drawing.Point(475, 23);
+            this.TxtImagen.Name = "TxtImagen";
+            this.TxtImagen.Size = new System.Drawing.Size(354, 25);
+            this.TxtImagen.TabIndex = 1;
+            // 
+            // TxtStock
+            // 
+            this.TxtStock.Location = new System.Drawing.Point(241, 352);
+            this.TxtStock.Name = "TxtStock";
+            this.TxtStock.Size = new System.Drawing.Size(200, 25);
+            this.TxtStock.TabIndex = 1;
+            // 
+            // TxtPrecioVenta
+            // 
+            this.TxtPrecioVenta.Location = new System.Drawing.Point(35, 352);
+            this.TxtPrecioVenta.Name = "TxtPrecioVenta";
+            this.TxtPrecioVenta.Size = new System.Drawing.Size(200, 25);
+            this.TxtPrecioVenta.TabIndex = 1;
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(34, 122);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(407, 25);
+            this.txtCodigo.TabIndex = 1;
+            // 
             // TxtNombre
             // 
             this.TxtNombre.Location = new System.Drawing.Point(33, 73);
@@ -309,6 +387,51 @@ namespace Sistema.Presentacion
             this.label4.Size = new System.Drawing.Size(77, 18);
             this.label4.TabIndex = 0;
             this.label4.Text = "Descripción";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(472, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 18);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Imagen";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(238, 331);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(41, 18);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Stock";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(32, 282);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 18);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Categorías";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(32, 332);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(83, 18);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Precio Venta";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(31, 101);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(109, 18);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Código de Barras";
             // 
             // label3
             // 
@@ -340,41 +463,6 @@ namespace Sistema.Presentacion
             // 
             this.ErroIcono.ContainerControl = this;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(472, 3);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 18);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Imagen";
-            // 
-            // CboCategoria
-            // 
-            this.CboCategoria.FormattingEnabled = true;
-            this.CboCategoria.Location = new System.Drawing.Point(35, 302);
-            this.CboCategoria.Name = "CboCategoria";
-            this.CboCategoria.Size = new System.Drawing.Size(406, 26);
-            this.CboCategoria.TabIndex = 5;
-            // 
-            // TxtImagen
-            // 
-            this.TxtImagen.Enabled = false;
-            this.TxtImagen.Location = new System.Drawing.Point(475, 23);
-            this.TxtImagen.Name = "TxtImagen";
-            this.TxtImagen.Size = new System.Drawing.Size(354, 25);
-            this.TxtImagen.TabIndex = 1;
-            // 
-            // BtnCargarImagen
-            // 
-            this.BtnCargarImagen.Location = new System.Drawing.Point(835, 23);
-            this.BtnCargarImagen.Name = "BtnCargarImagen";
-            this.BtnCargarImagen.Size = new System.Drawing.Size(51, 25);
-            this.BtnCargarImagen.TabIndex = 4;
-            this.BtnCargarImagen.Text = "...";
-            this.BtnCargarImagen.UseVisualStyleBackColor = true;
-            this.BtnCargarImagen.Click += new System.EventHandler(this.BtnCargarImagen_Click);
-            // 
             // PicImagen
             // 
             this.PicImagen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -385,91 +473,15 @@ namespace Sistema.Presentacion
             this.PicImagen.TabIndex = 6;
             this.PicImagen.TabStop = false;
             // 
-            // label7
+            // BtnReporte
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(32, 282);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 18);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Categorías";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(31, 101);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 18);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Código de Barras";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Location = new System.Drawing.Point(34, 122);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(407, 25);
-            this.txtCodigo.TabIndex = 1;
-            // 
-            // BtnGenerar
-            // 
-            this.BtnGenerar.Location = new System.Drawing.Point(32, 153);
-            this.BtnGenerar.Name = "BtnGenerar";
-            this.BtnGenerar.Size = new System.Drawing.Size(123, 25);
-            this.BtnGenerar.TabIndex = 4;
-            this.BtnGenerar.Text = "Generar Código";
-            this.BtnGenerar.UseVisualStyleBackColor = true;
-            this.BtnGenerar.Click += new System.EventHandler(this.BtnGenerar_Click);
-            // 
-            // BtnGuardarCodigo
-            // 
-            this.BtnGuardarCodigo.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BtnGuardarCodigo.Enabled = false;
-            this.BtnGuardarCodigo.Location = new System.Drawing.Point(161, 153);
-            this.BtnGuardarCodigo.Name = "BtnGuardarCodigo";
-            this.BtnGuardarCodigo.Size = new System.Drawing.Size(123, 25);
-            this.BtnGuardarCodigo.TabIndex = 4;
-            this.BtnGuardarCodigo.Text = "Guardar Código";
-            this.BtnGuardarCodigo.UseVisualStyleBackColor = true;
-            this.BtnGuardarCodigo.Click += new System.EventHandler(this.BtnGuardarCodigo_Click);
-            // 
-            // PanelCodigo
-            // 
-            this.PanelCodigo.Location = new System.Drawing.Point(35, 184);
-            this.PanelCodigo.Name = "PanelCodigo";
-            this.PanelCodigo.Size = new System.Drawing.Size(406, 95);
-            this.PanelCodigo.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 332);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 18);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Precio Venta";
-            // 
-            // TxtPrecioVenta
-            // 
-            this.TxtPrecioVenta.Location = new System.Drawing.Point(35, 352);
-            this.TxtPrecioVenta.Name = "TxtPrecioVenta";
-            this.TxtPrecioVenta.Size = new System.Drawing.Size(200, 25);
-            this.TxtPrecioVenta.TabIndex = 1;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(238, 331);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 18);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Stock";
-            // 
-            // TxtStock
-            // 
-            this.TxtStock.Location = new System.Drawing.Point(241, 352);
-            this.TxtStock.Name = "TxtStock";
-            this.TxtStock.Size = new System.Drawing.Size(200, 25);
-            this.TxtStock.TabIndex = 1;
+            this.BtnReporte.Location = new System.Drawing.Point(740, 6);
+            this.BtnReporte.Name = "BtnReporte";
+            this.BtnReporte.Size = new System.Drawing.Size(75, 25);
+            this.BtnReporte.TabIndex = 8;
+            this.BtnReporte.Text = "Reporte";
+            this.BtnReporte.UseVisualStyleBackColor = true;
+            this.BtnReporte.Click += new System.EventHandler(this.BtnReporte_Click);
             // 
             // FrmArticulo
             // 
@@ -544,5 +556,6 @@ namespace Sistema.Presentacion
         private System.Windows.Forms.TextBox TxtPrecioVenta;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button BtnReporte;
     }
 }

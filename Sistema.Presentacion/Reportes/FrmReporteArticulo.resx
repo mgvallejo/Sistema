@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="ErroIcono.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="articulo_listarBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>125, 17</value>
+  </metadata>
+  <metadata name="DsSistema.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>37</value>
+  <metadata name="articulo_listarTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>327, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -217,30 +220,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/h/D//wfgf/8D4H//A+B//wPgf/+H8P///////+AD//8AAP/+A
         AB//AAAP/w//D/4f/wf+H/+H/h//w/4f/8P+P//h/D/34fw/8/D8P/Pw/D/x+fx/8f/4f/H/+H7h//h8
         Qf/4fAP/8PwD/4D8B/8B/Af/A/wD/4/8A////D//
-</value>
-  </data>
-  <data name="BtnClose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAONJREFUSEvt
-        1UEOgjAQhWFO4E30YO7AiHoYJZ7PhTHuxXn2N7GddkEqO75kkpY3TBQINItJxnFcWV2sblZT6Zyz1Ypx
-        noVXdVYaGOdZ+Ag9Ve6M82ioxjiPvBrjPPLU2uoUlpGj1SYsY4zzyFMtWR+2H3uOtWEbU5ZFnnpZbckP
-        Vj3rLZmjPIu85Eib+nR5imjzyEs+v1xsrX9SRJtHntJl+N6H30vUkTnKs8hTHVnuJu/CNqYsizylRzH3
-        mOrYXx7TyRjnkVdjnGfZ7C+72V/X+uAMVk91TqRz9LEqf3AWXtO8AZj8w9o4src/AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <metadata name="Seleccionar.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Seleccionar.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="BtnCloseDetalle.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAONJREFUSEvt
-        1UEOgjAQhWFO4E30YO7AiHoYJZ7PhTHuxXn2N7GddkEqO75kkpY3TBQINItJxnFcWV2sblZT6Zyz1Ypx
-        noVXdVYaGOdZ+Ag9Ve6M82ioxjiPvBrjPPLU2uoUlpGj1SYsY4zzyFMtWR+2H3uOtWEbU5ZFnnpZbckP
-        Vj3rLZmjPIu85Eib+nR5imjzyEs+v1xsrX9SRJtHntJl+N6H30vUkTnKs8hTHVnuJu/CNqYsizylRzH3
-        mOrYXx7TyRjnkVdjnGfZ7C+72V/X+uAMVk91TqRz9LEqf3AWXtO8AZj8w9o4src/AAAAAElFTkSuQmCC
 </value>
   </data>
 </root>
